@@ -22,8 +22,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Aporva Varshney"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Aporva Varshney"
 description              : "Aporva, now available in Web 2.0."
