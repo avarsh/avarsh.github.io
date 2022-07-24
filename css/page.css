@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 body {
-  background-color: #fafafa;
+  background-color: #faf6ed;
   color: #333333;
   font-family: "Libre Baskerville", serif;
   font-size: 18px;
-  line-height: 2em; }
+  line-height: 1.8em; }
 
 .page {
   width: 1200px;
@@ -15,7 +15,8 @@ body {
 .navbar {
   width: 100%;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  margin-bottom: 50px; }
   .navbar .navbar-item {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -39,8 +40,7 @@ body {
 
 #excerpt {
   padding-left: 24px;
-  max-width: 90%;
-  line-height: 2em; }
+  max-width: 90%; }
 
 #greeting {
   margin-bottom: 24px; }
@@ -85,8 +85,7 @@ body {
     font-family: "JetBrains Mono", monospace; }
 
 .timeline-table {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: inline-grid;
   grid-template-columns: auto 1fr; }
   .timeline-table .timeline-time {
@@ -101,6 +100,42 @@ body {
 
 .inline-code {
   font-family: "JetBrains Mono", monospace; }
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: auto; }
+
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .card-holder .card {
+    transition: all 200ms linear;
+    display: block;
+    width: 400px;
+    max-height: 500px;
+    background-color: #fff;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.07);
+    margin: 20px; }
+    .card-holder .card .card-head {
+      transition: all 200ms linear;
+      background-color: #333333;
+      color: #fff;
+      padding: 24px; }
+      .card-holder .card .card-head .card-title {
+        font-weight: bold; }
+      .card-holder .card .card-head .card-subtitle {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7); }
+    .card-holder .card .card-content {
+      padding: 24px; }
+
+a.card:hover {
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.1); }
+  a.card:hover .card-head {
+    background-color: #ff4b50; }
 
 @media only screen and (max-width: 1200px) {
   .page {

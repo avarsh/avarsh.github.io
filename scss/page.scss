@@ -1,10 +1,13 @@
 // Variables
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap');@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-$bg-tinted: #faf6ed;
-$bg: #fafafa;
+$bg: #faf6ed;
+// $bg: #fafafa;
 $fg: #333333;
 $white: #fff;
+$sunset-red: #ff4b50;
+
+$sunset: linear-gradient(#ff3467, #ff9a00);
 
 $font-family: 'Libre Baskerville', serif;
 $alt-font-family: "JetBrains Mono", monospace;
@@ -19,7 +22,7 @@ body {
     color: $fg;
     font-family: $font-family;
     font-size: $size-normal;
-    line-height: 2em;
+    line-height: 1.8em;
 }
 
 .page {
@@ -32,6 +35,7 @@ body {
     width: 100%;
     font-family: $alt-font-family;
     font-size: $size-small;
+    margin-bottom: 50px;    
     
     .navbar-item {
         margin-top: 20px;
@@ -68,7 +72,6 @@ body {
 #excerpt {
     padding-left: 24px;
     max-width: 90%;
-    line-height: 2em;
 }
 
 #greeting {
@@ -88,7 +91,7 @@ body {
     }
     
     :last-child {
-        background-image: linear-gradient(#ff3467, #ff9a00);
+        background-image: $sunset;
         color: $white;
         font-style: italic;
     }
@@ -126,8 +129,7 @@ body {
 }
 
 .timeline-table {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     display: inline-grid;
     grid-template-columns: auto 1fr;
@@ -152,6 +154,57 @@ body {
 
 .inline-code {
     font-family: $code-font-family;
+}
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: auto;
+  }
+
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .card {
+        transition: all 200ms linear;
+        display: block;
+        width: 400px;
+        max-height: 500px;
+        background-color: $white;
+        box-shadow: -10px 10px rgba(#000, 0.07);
+        margin: 20px;
+        
+        .card-head {
+            transition: all 200ms linear;
+            background-color: $fg;
+            color: $white;
+            padding: 24px;
+            
+            .card-title {
+                font-weight: bold;
+            }
+            
+            .card-subtitle {
+                font-style: italic;
+                color:rgba(white, 0.7)
+            }
+        }
+        
+        .card-content {
+            padding: 24px;
+        }
+    }
+}
+
+a.card:hover {
+    .card-head {
+        background-color: $sunset-red;
+    }
+    
+    box-shadow: -10px 10px rgba(#000, 0.1);
 }
 
 @media only screen and (max-width: 1200px) {
