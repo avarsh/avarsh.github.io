@@ -1,12 +1,14 @@
 // Variables
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap');@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-$bg: #faf6ed;
+$bg-tinted: #faf6ed;
+$bg: #fafafa;
 $fg: #333333;
 $white: #fff;
 
 $font-family: 'Libre Baskerville', serif;
 $alt-font-family: "JetBrains Mono", monospace;
+$code-font-family: "JetBrains Mono", monospace;
 
 $size-small: 0.9em;
 $size-normal: 18px;
@@ -17,6 +19,7 @@ body {
     color: $fg;
     font-family: $font-family;
     font-size: $size-normal;
+    line-height: 2em;
 }
 
 .page {
@@ -57,7 +60,7 @@ body {
         grid-template-rows: auto auto 1fr;
         
         div {
-            display: inline-block;
+            display: inline;
         }
     }
 }
@@ -104,6 +107,52 @@ body {
     box-shadow: -5px 10px rgba(#000, 0.1);
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    .section-heading {
+        margin: auto;
+        margin-bottom: 20px;
+        background-color: $fg;
+        color: $white;
+        box-shadow: -5px 5px rgba(#000, 0.1);
+        padding: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: $alt-font-family;
+    }
+}
+
+.timeline-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    display: inline-grid;
+    grid-template-columns: auto 1fr;
+    
+    .timeline-time {
+        width: 400px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    
+    .timeline-entry {
+        
+        .entry-heading {
+            font-weight: bold;
+        }
+        .entry-subheading {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.inline-code {
+    font-family: $code-font-family;
+}
 
 @media only screen and (max-width: 1200px) {
     .page {

@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 body {
-  background-color: #faf6ed;
+  background-color: #fafafa;
   color: #333333;
   font-family: "Libre Baskerville", serif;
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 2em; }
 
 .page {
   width: 1200px;
@@ -34,7 +35,7 @@ body {
     display: inline-grid;
     grid-template-rows: auto auto 1fr; }
     #intro > :last-child div {
-      display: inline-block; }
+      display: inline; }
 
 #excerpt {
   padding-left: 24px;
@@ -67,6 +68,39 @@ body {
   border-radius: 100%;
   vertical-align: middle;
   box-shadow: -5px 10px rgba(0, 0, 0, 0.1); }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; }
+  .section .section-heading {
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #333333;
+    color: #fff;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "JetBrains Mono", monospace; }
+
+.timeline-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-grid;
+  grid-template-columns: auto 1fr; }
+  .timeline-table .timeline-time {
+    width: 400px;
+    text-align: right;
+    margin-right: 20px; }
+  .timeline-table .timeline-entry .entry-heading {
+    font-weight: bold; }
+  .timeline-table .timeline-entry .entry-subheading {
+    font-style: italic;
+    margin-bottom: 10px; }
+
+.inline-code {
+  font-family: "JetBrains Mono", monospace; }
 
 @media only screen and (max-width: 1200px) {
   .page {
