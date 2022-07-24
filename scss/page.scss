@@ -45,7 +45,7 @@ body {
     width: 100%;
     font-family: $alt-font-family;
     font-size: $size-small;
-    margin-bottom: 50px;    
+    margin-bottom: 50px; 
     
     .navbar-item {
         margin-top: 20px;
@@ -84,6 +84,9 @@ body {
 
 #intro {
     max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
     > .col {
         margin: 20px;
     }
@@ -147,7 +150,8 @@ body {
 .section {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
     .section-heading {
         margin: auto;
@@ -194,6 +198,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
+    margin: 20px;
     
     .card {
         transition: all 200ms linear;
@@ -201,7 +207,6 @@ body {
         width: 400px;
         background-color: $white;
         box-shadow: -10px 10px rgba(#000, 0.07);
-        margin: 20px;
         
         .card-head {
             transition: all 200ms linear;

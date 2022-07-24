@@ -50,7 +50,9 @@ body {
   flex-wrap: nowrap; }
 
 #intro {
-  max-width: 100%; }
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
   #intro > .col {
     margin: 20px; }
   #intro > :first-child {
@@ -96,7 +98,8 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  margin-top: 20px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   .section .section-heading {
     margin: auto;
     margin-bottom: 20px;
@@ -128,14 +131,15 @@ body {
 .card-holder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  gap: 40px;
+  margin: 20px; }
   .card-holder .card {
     transition: all 200ms linear;
     display: block;
     width: 400px;
     background-color: #fff;
-    box-shadow: -10px 10px rgba(0, 0, 0, 0.07);
-    margin: 20px; }
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.07); }
     .card-holder .card .card-head {
       transition: all 200ms linear;
       background-color: #333333;
