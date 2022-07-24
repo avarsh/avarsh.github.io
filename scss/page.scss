@@ -15,6 +15,7 @@ $code-font-family: "JetBrains Mono", monospace;
 
 $size-small: 0.9em;
 $size-normal: 18px;
+$size-medium: 2em;
 $size-large: 4em;
 
 body {
@@ -24,6 +25,15 @@ body {
     font-size: $size-normal;
     line-height: 1.8;
 }
+
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: auto;
+}
+
 
 .page {
     width: 1200px;
@@ -40,6 +50,30 @@ body {
     .navbar-item {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    
+    a.navbar-item {
+        transition: all 200ms ease-in;
+        border-bottom: solid 2px rgba($fg, 0.0);
+        padding: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        &:hover {
+            border-bottom: solid 2px $fg;
+            cursor: pointer;
+        }
+    }
+    
+    a.navbar-item.focused {
+        border-bottom: solid 2px $fg;
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $fg 50%);
+        transition: all 200ms ease-in;
+        &:hover {
+            background-position: 0 100%;
+            cursor: pointer;
+            color: white;
+        }
     }
 }
 
@@ -156,13 +190,6 @@ body {
     font-family: $code-font-family;
 }
 
-.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
-    text-decoration: none;
-    color: inherit;
-    outline: 0;
-    cursor: auto;
-  }
-
 .card-holder {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +199,6 @@ body {
         transition: all 200ms linear;
         display: block;
         width: 400px;
-        max-height: 500px;
         background-color: $white;
         box-shadow: -10px 10px rgba(#000, 0.07);
         margin: 20px;
@@ -204,6 +230,7 @@ a.card:hover {
         background-color: $sunset-red;
     }
     
+    cursor: pointer;
     box-shadow: -10px 10px rgba(#000, 0.1);
 }
 
@@ -217,6 +244,7 @@ a.card:hover {
         
         > :first-child {
             max-width: 100%;
+            margin: auto;
             
             img {
                 max-width: calc(min(400px, 100%));
@@ -227,7 +255,7 @@ a.card:hover {
         }
         
         > :last-child {
-            
+            margin: auto;
             div {
                 display: inline-grid;
                 justify-content: center;
@@ -235,6 +263,10 @@ a.card:hover {
         }
     }
     
+    #greeting .col {
+        font-size: calc(max(5vw, 2em));
+    }
+
     #excerpt {
         text-align: center;
     }
