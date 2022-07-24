@@ -1,7 +1,18 @@
+@font-face {
+  font-family: Libertine;
+  src: url("../assets/ttf-linux-libertine/LinLibertine_R.otf"); }
+@font-face {
+  font-family: Libertine;
+  src: url("../assets/ttf-linux-libertine/LinLibertine_RB.otf");
+  font-weight: bold; }
+@font-face {
+  font-family: Libertine;
+  src: url("../assets/ttf-linux-libertine/LinLibertine_RI.otf");
+  font-style: italic; }
 body {
   background-color: #faf6ed;
   color: #333333;
-  font-family: "Linux Libertine";
+  font-family: Libertine, serif;
   font-size: 22px; }
 
 .page {

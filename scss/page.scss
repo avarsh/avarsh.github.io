@@ -1,10 +1,27 @@
 // Variables
 
+@font-face {
+    font-family: Libertine;
+    src: url("../assets/ttf-linux-libertine/LinLibertine_R.otf");
+}  
+
+@font-face {
+    font-family: Libertine;
+    src: url("../assets/ttf-linux-libertine/LinLibertine_RB.otf");
+    font-weight: bold;
+}  
+
+@font-face {
+    font-family: Libertine;
+    src: url("../assets/ttf-linux-libertine/LinLibertine_RI.otf");
+    font-style: italic;
+}  
+
 $bg: #faf6ed;
 $fg: #333333;
 $white: #fff;
 
-$font-family: "Linux Libertine";
+$font-family: Libertine;
 $alt-font-family: "JetBrains Mono";
 
 $size-small: 0.8em;
@@ -14,7 +31,7 @@ $size-large: 4em;
 body {
     background-color: $bg;
     color: $fg;
-    font-family: $font-family;
+    font-family: $font-family, serif;
     font-size: $size-normal;
 }
 
