@@ -39,6 +39,18 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    
+    .page-title {
+        text-align: center;
+        font-size: $size-large;
+    }
+    
+    .page-subtitle {
+        text-align: center;
+        font-size: $size-medium;
+        font-style: italic;
+        color: rgba(#000, 0.5);
+    }
 }
 
 .navbar {
@@ -46,10 +58,22 @@ body {
     font-family: $alt-font-family;
     font-size: $size-small;
     margin-bottom: 50px; 
+    display: flex;
+    flex-direction: row;
     
     .navbar-item {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    
+    .navbar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar-spacer {
+        flex-grow: 1;
     }
     
     a.navbar-item {
@@ -285,5 +309,10 @@ a.card:hover {
             text-align: left;
             margin-right: 0;
         }
+    }
+    
+    .card-holder {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
