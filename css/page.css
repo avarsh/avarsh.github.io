@@ -28,7 +28,8 @@ body {
   #intro > .col {
     margin: 20px; }
   #intro > :first-child {
-    max-width: 400px; }
+    max-width: 400px;
+    flex-shrink: 0; }
   #intro > :last-child {
     display: inline-grid;
     grid-template-rows: auto auto 1fr; }

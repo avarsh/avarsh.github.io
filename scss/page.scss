@@ -49,6 +49,7 @@ body {
     
     > :first-child {
         max-width: 400px;
+        flex-shrink: 0;
     }
     
     > :last-child {
