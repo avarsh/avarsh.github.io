@@ -1,0 +1,137 @@
+// Variables
+
+$bg: #faf6ed;
+$fg: #333333;
+$white: #fff;
+
+$font-family: "Linux Libertine";
+$alt-font-family: "JetBrains Mono";
+
+$size-small: 0.8em;
+$size-normal: 22px;
+$size-large: 4em;
+
+body {
+    background-color: $bg;
+    color: $fg;
+    font-family: $font-family;
+    font-size: $size-normal;
+}
+
+.page {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    width: 100%;
+    font-family: $alt-font-family;
+    font-size: $size-small;
+    
+    .navbar-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.two-col {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#intro {
+    max-width: 100%;
+    > .col {
+        margin: 20px;
+    }
+    
+    > :first-child {
+        max-width: 400px;
+    }
+    
+    > :last-child {
+        display: inline-grid;
+        grid-template-rows: auto auto 1fr;
+        
+        div {
+            display: inline-block;
+        }
+    }
+}
+
+#excerpt {
+    padding-left: 24px;
+    max-width: 90%;
+    line-height: 1.5em;
+}
+
+#greeting {
+    margin-bottom: 24px;
+    
+    .col {
+        font-size: $size-large;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-shadow: -2px 5px rgba(#000, 0.1);
+    }
+    
+    :first-child {
+        max-width: 100%;
+    }
+    
+    :last-child {
+        background-image: linear-gradient(#ff3467, #ff9a00);
+        color: $white;
+        font-style: italic;
+    }
+}
+
+.vertical-align-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#profile-image {
+    width: 95%;
+    border-radius: 100%;
+    vertical-align: middle;
+    box-shadow: -5px 10px rgba(#000, 0.1);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .page {
+        width: 100%;        
+    }
+    
+    #intro {
+        flex-direction: column;
+        
+        > :first-child {
+            max-width: 100%;
+            
+            img {
+                max-width: calc(min(400px, 100%));
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        
+        > :last-child {
+            
+            div {
+                display: inline-grid;
+                justify-content: center;
+            }
+        }
+    }
+    
+    #excerpt {
+        text-align: center;
+    }
+}

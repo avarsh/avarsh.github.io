@@ -1,0 +1,88 @@
+body {
+  background-color: #faf6ed;
+  color: #333333;
+  font-family: "Linux Libertine";
+  font-size: 22px; }
+
+.page {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.navbar {
+  width: 100%;
+  font-family: "JetBrains Mono";
+  font-size: 0.8em; }
+  .navbar .navbar-item {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.two-col {
+  display: flex;
+  flex-wrap: nowrap; }
+
+#intro {
+  max-width: 100%; }
+  #intro > .col {
+    margin: 20px; }
+  #intro > :first-child {
+    max-width: 400px; }
+  #intro > :last-child {
+    display: inline-grid;
+    grid-template-rows: auto auto 1fr; }
+    #intro > :last-child div {
+      display: inline-block; }
+
+#excerpt {
+  padding-left: 24px;
+  max-width: 90%;
+  line-height: 1.5em; }
+
+#greeting {
+  margin-bottom: 24px; }
+  #greeting .col {
+    font-size: 4em;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-shadow: -2px 5px rgba(0, 0, 0, 0.1); }
+  #greeting :first-child {
+    max-width: 100%; }
+  #greeting :last-child {
+    background-image: linear-gradient(#ff3467, #ff9a00);
+    color: #fff;
+    font-style: italic; }
+
+.vertical-align-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+#profile-image {
+  width: 95%;
+  border-radius: 100%;
+  vertical-align: middle;
+  box-shadow: -5px 10px rgba(0, 0, 0, 0.1); }
+
+@media only screen and (max-width: 1200px) {
+  .page {
+    width: 100%; }
+
+  #intro {
+    flex-direction: column; }
+    #intro > :first-child {
+      max-width: 100%; }
+      #intro > :first-child img {
+        max-width: calc(min(400px, 100%));
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+    #intro > :last-child div {
+      display: inline-grid;
+      justify-content: center; }
+
+  #excerpt {
+    text-align: center; } }
+
+/*# sourceMappingURL=page.css.map */
