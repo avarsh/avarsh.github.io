@@ -156,7 +156,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
     .page {
-        width: 100%;        
+        width: 80%;        
     }
     
     #intro {
@@ -182,7 +182,23 @@ body {
         }
     }
     
+    #greeting .col {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
     #excerpt {
         text-align: center;
+    }
+    
+    .timeline-table {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        
+        .timeline-time {
+            width: 100%;
+            text-align: left;
+            margin-right: 0;
+        }
     }
 }
