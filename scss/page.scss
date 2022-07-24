@@ -22,7 +22,7 @@ body {
     color: $fg;
     font-family: $font-family;
     font-size: $size-normal;
-    line-height: 1.8em;
+    line-height: 1.8;
 }
 
 .page {
@@ -233,11 +233,6 @@ a.card:hover {
                 justify-content: center;
             }
         }
-    }
-    
-    #greeting .col {
-        padding-top: 32px;
-        padding-bottom: 32px;
     }
     
     #excerpt {

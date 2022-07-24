@@ -5,7 +5,7 @@ body {
   color: #333333;
   font-family: "Libre Baskerville", serif;
   font-size: 18px;
-  line-height: 1.8em; }
+  line-height: 1.8; }
 
 .page {
   width: 1200px;
@@ -153,10 +153,6 @@ a.card:hover {
     #intro > :last-child div {
       display: inline-grid;
       justify-content: center; }
-
-  #greeting .col {
-    padding-top: 32px;
-    padding-bottom: 32px; }
 
   #excerpt {
     text-align: center; }
