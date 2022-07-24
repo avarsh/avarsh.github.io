@@ -1,37 +1,21 @@
 // Variables
 
-@font-face {
-    font-family: Libertine;
-    src: url("../assets/ttf-linux-libertine/LinLibertine_R.otf");
-}  
-
-@font-face {
-    font-family: Libertine;
-    src: url("../assets/ttf-linux-libertine/LinLibertine_RB.otf");
-    font-weight: bold;
-}  
-
-@font-face {
-    font-family: Libertine;
-    src: url("../assets/ttf-linux-libertine/LinLibertine_RI.otf");
-    font-style: italic;
-}  
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap');@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 $bg: #faf6ed;
 $fg: #333333;
 $white: #fff;
 
-$font-family: Libertine;
-$alt-font-family: "JetBrains Mono";
+$font-family: 'Libre Baskerville', serif;
+$alt-font-family: "JetBrains Mono", monospace;
 
-$size-small: 0.8em;
-$size-normal: 22px;
+$size-small: 0.9em;
+$size-normal: 18px;
 $size-large: 4em;
 
 body {
     background-color: $bg;
     color: $fg;
-    font-family: $font-family, serif;
+    font-family: $font-family;
     font-size: $size-normal;
 }
 
@@ -80,7 +64,7 @@ body {
 #excerpt {
     padding-left: 24px;
     max-width: 90%;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 #greeting {
