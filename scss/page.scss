@@ -85,6 +85,21 @@ body {
     }
 }
 
+.text-block {
+    &.morning > strong {
+        color: $morning-accent;
+    }
+
+    &.afternoon > strong {
+        color: $afternoon-accent;
+    }
+
+    &.evening > strong {
+        color: $evening-accent;
+    }
+}
+
+
 .two-col {
     display: flex;
     flex-wrap: nowrap;

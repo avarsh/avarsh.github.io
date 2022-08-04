@@ -74,6 +74,16 @@ body {
   color: white;
 }
 
+.text-block.morning > strong {
+  color: #ec141c;
+}
+.text-block.afternoon > strong {
+  color: #5617eb;
+}
+.text-block.evening > strong {
+  color: #d10747;
+}
+
 .two-col {
   display: flex;
   flex-wrap: nowrap;
