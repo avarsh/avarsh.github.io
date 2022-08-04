@@ -187,7 +187,7 @@ body {
 .card-holder .card {
   transition: all 200ms linear;
   display: block;
-  width: 400px;
+  width: min(30%, 400px);
   background-color: #faf6ed;
   border: solid 1px rgba(51, 51, 51, 0.3);
   box-shadow: -10px 10px rgba(0, 0, 0, 0.07);
@@ -215,6 +215,7 @@ a.card:hover {
   box-shadow: -10px 10px rgba(0, 0, 0, 0.1);
   color: #333333;
 }
+
 @media only screen and (max-width: 1200px) {
   .page {
     width: 80%;
@@ -257,6 +258,9 @@ a.card:hover {
   .card-holder {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .card-holder .card {
+    width: 400px;
   }
 }
 

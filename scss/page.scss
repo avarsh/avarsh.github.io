@@ -228,7 +228,7 @@ body {
     .card {
         transition: all 200ms linear;
         display: block;
-        width: 400px;
+        width: calc(min(30%, 400px));
         background-color: $bg;
         border: solid 1px transparentize($fg, 0.7);
         box-shadow: -10px 10px rgba(#000, 0.07);
@@ -256,10 +256,6 @@ body {
 }
 
 a.card:hover {
-    .card-head {
-        //background-color: $sunset-red;
-    }
-    
     border: solid 1px $fg;
     cursor: pointer;
     box-shadow: -10px 10px rgba(#000, 0.1);
@@ -317,5 +313,9 @@ a.card:hover {
     .card-holder {
         margin-left: 0 !important;
         margin-right: 0 !important;
+
+        .card {
+            width: 400px;
+        }
     }
 }
