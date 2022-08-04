@@ -207,12 +207,6 @@
                         <div class="card-content">
                             A group project centered on developing a neural network library
                             for Haskell, using dependent types to catch errors at compile time. 
-                            <!-- We extended an existing library, Grenade, and added significant
-                            new functionality, including new and better optimized layer types, and the ability to
-                            load pre-existing networks.
-                            <br/> <br/>
-                            Additionally, we created a demo application, wrapped in Electron, to allow the user to 
-                            experiment with the networks now supported in Grenade.-->
                         </div>
                     </a>
                     
@@ -241,12 +235,25 @@
                             </div>
                         </div>
                         <div class="card-content">
-                            A clean and functional website in pure HTML and CSS - no JavaScript involved!
+                            A website and blog written without any frameworks, boilerplate code or
+                            static site generators, with only 10 lines of Javascript.
                         </div>
                     </a>
                 </div>
             </div>
             
+            <script>
+                var today = new Date()
+                var curHr = today.getHours()
+    
+                if (curHr < 12) {
+                    document.getElementById("greeting-time").innerHTML = "morning";
+                } else if (curHr < 18) {
+                    document.getElementById("greeting-time").innerHTML = "afternoon";
+                } else {
+                    document.getElementById("greeting-time").innerHTML = "evening";
+                }
+            </script>
         </div>
 
     </body>

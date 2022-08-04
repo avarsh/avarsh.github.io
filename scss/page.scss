@@ -1,22 +1,6 @@
 // Variables
-
+@use 'variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@0;1&display=swap');@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-$bg: #faf6ed;
-// $bg: #fafafa;
-$fg: #333333;
-$white: #fff;
-$sunset-red: #ff4b50;
-
-$sunset: linear-gradient(#ff3467, #ff9a00);
-
-$font-family: 'Libre Baskerville', serif;
-$alt-font-family: "JetBrains Mono", monospace;
-$code-font-family: "JetBrains Mono", monospace;
-
-$size-small: 0.9em;
-$size-normal: 18px;
-$size-medium: 2em;
-$size-large: 4em;
 
 body {
     background-color: $bg;

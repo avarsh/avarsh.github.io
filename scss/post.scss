@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .main {
   display: inline-grid;
   grid-template-columns: 1fr auto 1fr;
@@ -34,7 +36,20 @@
     list-style: none;
     padding-left: 1.2em;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a {
+    color: transparentize($fg, 0.2);
+
+    &:hover {
+      color: $fg;
+    }
+  }
 }
+
 
 /*html {
   line-height: 1.5;

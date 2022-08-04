@@ -30,6 +30,15 @@
   list-style: none;
   padding-left: 1.2em;
 }
+.toc a {
+  text-decoration: none;
+}
+.toc a {
+  color: rgba(51, 51, 51, 0.8);
+}
+.toc a:hover {
+  color: #333333;
+}
 
 /*html {
   line-height: 1.5;
