@@ -1,0 +1,13 @@
+<a class="card reset-a" href="$url">
+    <div class="card-head">
+        <div class="card-title">
+            $title
+        </div>
+        <div class="card-subtitle">
+            $date
+        </div>
+    </div>
+    <div class="card-content">
+        $preview
+    </div>
+</a>

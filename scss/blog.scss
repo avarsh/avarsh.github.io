@@ -1,0 +1,9 @@
+.post-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .card {
+        width: calc(min(30%, 400px));
+    }
+}

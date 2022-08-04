@@ -35,21 +35,4 @@
             </div>
 
             <div class="post-list">
-                <div class="card-holder"><a class="card reset-a" href="/blog/html/test.html">
-    <div class="card-head">
-        <div class="card-title">
-            Test Post
-        </div>
-        <div class="card-subtitle">
-            10th July
-        </div>
-    </div>
-    <div class="card-content">
-        This is a test post designed to test the overall workflow. We want to test all the features of Markdown, including the text formatting, inline code and...
-    </div>
-</a>        
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+                <div class="card-holder">
