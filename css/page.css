@@ -117,11 +117,20 @@ body {
 }
 #greeting :first-child {
   max-width: 100%;
+  padding-right: 0;
 }
 #greeting :last-child {
-  background-image: linear-gradient(#ff3467, #ff9a00);
   color: #fff;
   font-style: italic;
+}
+#greeting :last-child.morning {
+  background-image: linear-gradient(#ff0f7b, #f89b29);
+}
+#greeting :last-child.afternoon {
+  background-image: linear-gradient(#7113FF, #00EEC6);
+}
+#greeting :last-child.evening {
+  background-image: linear-gradient(#1D2671, #C33764);
 }
 
 .vertical-align-helper {
@@ -241,10 +250,21 @@ a.card:hover {
     justify-content: center;
   }
   #greeting .col {
-    font-size: max(5vw, 2em);
+    font-size: max(10vw, 2em);
+  }
+  #greeting .col:first-child {
+    padding: 0;
+    padding-top: 12px;
+  }
+  #greeting .col:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #excerpt {
     text-align: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .timeline-table {
     grid-template-columns: 1fr;

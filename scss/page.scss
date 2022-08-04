@@ -133,10 +133,22 @@ body {
     
     :first-child {
         max-width: 100%;
+        padding-right: 0;
     }
     
     :last-child {
-        background-image: $sunset;
+        &.morning {
+            background-image: $morning;
+        }
+
+        &.afternoon {
+            background-image: $afternoon;
+        }
+
+        &.evening {
+            background-image: $evening;
+        }
+
         color: $white;
         font-style: italic;
     }
@@ -276,11 +288,24 @@ a.card:hover {
     }
     
     #greeting .col {
-        font-size: calc(max(5vw, 2em));
+        font-size: calc(max(10vw, 2em));
+
+        &:first-child {
+            padding: 0;
+            padding-top: 12px;
+        }
+
+        &:last-child {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     #excerpt {
         text-align: center;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .timeline-table {

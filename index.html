@@ -41,7 +41,7 @@
                         <div class="col">
                             Good
                         </div>
-                        <div class="col" id="greeting-time">
+                        <div class="col dynamic" id="greeting-time">
                             morning!
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                         </div>
                         <div class="card-content">
                             A website and blog written without any frameworks, boilerplate code or
-                            static site generators, with only 10 lines of Javascript.
+                            static site generators, and < 20 lines of Javascript.
                         </div>
                     </a>
                 </div>
@@ -245,13 +245,21 @@
             <script>
                 var today = new Date()
                 var curHr = today.getHours()
-    
+                const dynamicElems = document.getElementsByClassName("dynamic");
+                var greeting;
+
                 if (curHr < 12) {
-                    document.getElementById("greeting-time").innerHTML = "morning";
+                    greeting = "morning";
                 } else if (curHr < 18) {
-                    document.getElementById("greeting-time").innerHTML = "afternoon";
+                    greeting = "afternoon";
                 } else {
-                    document.getElementById("greeting-time").innerHTML = "evening";
+                    greeting = "evening";
+                }
+
+                document.getElementById("greeting-time").innerHTML = greeting;
+
+                for (var i = 0; i < dynamicElems.length; i++) {
+                    dynamicElems[i].classList.add(greeting);
                 }
             </script>
         </div>
