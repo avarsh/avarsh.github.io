@@ -143,7 +143,7 @@ body {
         padding-right: 24px;
         padding-top: 12px;
         padding-bottom: 12px;
-        text-shadow: -2px 5px rgba(#000, 0.1);
+        text-shadow: -5px 5px rgba(#000, 0.1);
     }
     
     :first-child {
@@ -271,6 +271,14 @@ a.card:hover {
     cursor: pointer;
     box-shadow: -10px 10px rgba(#000, 0.1);
     color: $fg;
+}
+
+.page-title {
+    text-shadow: -5px 5px rgba(#000, 0.1);
+}
+
+h1 {
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 1200px) {
