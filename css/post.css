@@ -3,10 +3,10 @@
   grid-template-columns: 1fr auto 1fr;
 }
 .main .left-column {
-  width: 300px;
+  width: 250px;
 }
 .main .right-column {
-  width: 300px;
+  width: 250px;
 }
 
 .title {
