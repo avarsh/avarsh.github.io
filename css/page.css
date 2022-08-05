@@ -159,8 +159,7 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px;
 }
 .section .section-heading {
   margin: auto;
@@ -246,6 +245,10 @@ h1 {
 @media only screen and (max-width: 1200px) {
   .page {
     width: 80%;
+  }
+  .section {
+    margin-left: 0;
+    margin-right: 0;
   }
   #intro {
     flex-direction: column;

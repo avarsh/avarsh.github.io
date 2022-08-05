@@ -34,5 +34,3 @@ $$
         & \cong \operatorname{Spec} K[T_{m + 1}, \dots, \hat{T_r}, \dots, T_n].
 \end{align*}
 $$
-
-and we're done.
