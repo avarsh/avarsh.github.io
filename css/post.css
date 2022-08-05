@@ -40,6 +40,22 @@
   color: #333333;
 }
 
+@media only screen and (max-width: 1200px) {
+  .main {
+    grid-template-columns: 80vw;
+    grid-template-rows: auto auto;
+  }
+  .main .left-column {
+    width: 0 !important;
+  }
+  .main .right-column {
+    grid-row: 1;
+    width: 100%;
+  }
+  .main .content {
+    width: 100%;
+  }
+}
 /*html {
   line-height: 1.5;
   font-family: Georgia, serif;
