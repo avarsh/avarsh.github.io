@@ -316,6 +316,7 @@ h1 {
     
     #greeting .col {
         font-size: calc(max(5vw, 2em));
+        text-shadow: -3px 3px rgba(#000, 0.1);
 
         &:first-child {
             padding: 0;

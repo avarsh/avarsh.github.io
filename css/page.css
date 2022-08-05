@@ -272,6 +272,7 @@ h1 {
   }
   #greeting .col {
     font-size: max(5vw, 2em);
+    text-shadow: -3px 3px rgba(0, 0, 0, 0.1);
   }
   #greeting .col:first-child {
     padding: 0;
