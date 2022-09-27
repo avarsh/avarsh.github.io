@@ -16,5 +16,5 @@ pandoc --toc --mathjax -f markdown -t html -c /css/post.css -c /css/page.css --t
 
 The sass code may be compiled into css using
 ```
-sass --watch scss:css
+dart-sass --watch scss:css
 ```

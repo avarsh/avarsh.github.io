@@ -37,6 +37,16 @@ body {
     }
 }
 
+@keyframes slideBottoms {
+    0% {
+        color: $fg;
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
 .navbar {
     width: 100%;
     font-family: $alt-font-family;
@@ -73,15 +83,13 @@ body {
     }
     
     a.navbar-item.focused {
+        animation: 500ms ease-out 0s 1 slideBottoms;
         border-bottom: solid 2px $fg;
         background-size: 100% 200%;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $fg 50%);
-        transition: all 200ms ease-in;
-        &:hover {
-            background-position: 0 100%;
-            cursor: pointer;
-            color: white;
-        }
+        background-position: 0 100%;
+        color: $white;
+        transition: 150ms ease-in;
     }
 }
 
