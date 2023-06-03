@@ -212,7 +212,7 @@ body {
 .card-holder .card {
   transition: all 200ms linear;
   display: block;
-  width: calc(min(30%, 400px));
+  width: min(30%, 400px);
   background-color: #faf6ed;
   border: solid 1px rgba(51, 51, 51, 0.3);
   box-shadow: -10px 10px rgba(0, 0, 0, 0.07);
@@ -253,12 +253,10 @@ h1 {
   .page {
     width: 80%;
   }
-
   .section {
     margin-left: 0;
     margin-right: 0;
   }
-
   #intro {
     flex-direction: column;
   }
@@ -267,7 +265,7 @@ h1 {
     margin: auto;
   }
   #intro > :first-child img {
-    max-width: calc(min(400px, 100%));
+    max-width: min(400px, 100%);
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -279,9 +277,8 @@ h1 {
     display: inline-grid;
     justify-content: center;
   }
-
   #greeting .col {
-    font-size: calc(max(5vw, 2em));
+    font-size: max(5vw, 2em);
     text-shadow: -3px 3px rgba(0, 0, 0, 0.1);
   }
   #greeting .col:first-child {
@@ -292,14 +289,12 @@ h1 {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   #excerpt {
     text-align: center;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
   }
-
   .timeline-table {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -309,7 +304,6 @@ h1 {
     text-align: left;
     margin-right: 0;
   }
-
   .card-holder {
     margin-left: 0 !important;
     margin-right: 0 !important;
