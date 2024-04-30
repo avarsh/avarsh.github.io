@@ -10,6 +10,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <div class="page">
             <!-- The navigation bar -->
+            <div class="navbar-mobile"> 
+
+                <span id="bar" onclick="openNav()">menu</span>
+
+                <div id="mobile-nav" class="nav-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+                    <a class="navbar-item reset-a focused" href="/mirror-symmetry.html">
+                        <span class="navbar-item-text">mirror symmetry</span>
+                    </a>
+                    
+                    <a class="navbar-item reset-a" href="https://dogs-seminar.github.io/">
+                        <span class="navbar-item-text">dogs</span>
+                    </a>
+
+                    <a class="navbar-item reset-a" href="https://arxiv.org/search/?searchtype=author&query=Varshney%2C+Aporva">
+                        <span class="navbar-item-text">arXiv</span>
+                    </a>
+
+                    <a class="navbar-item reset-a" href="https://github.com/avarsh">
+                        <span class="navbar-item-text">github</span>
+                    </a>
+
+                    <a class="navbar-item reset-a" href="https://www.linkedin.com/in/aporva-varshney-318b2a178/">
+                        <span class="navbar-item-text">linkedin</span>
+                    </a>
+                </div>
+            </div>
+
             <div class="navbar">
                 <a class="navbar-item reset-a focused" href="/">
                     <span class="navbar-item-text">aporva</span>
@@ -19,6 +48,18 @@
                 </div>
                 
                 <div class="navbar-right">                    
+                    <a class="navbar-item reset-a" href="/mirror-symmetry.html">
+                        <span class="navbar-item-text">mirror symmetry</span>
+                    </a>
+                    
+                    <a class="navbar-item reset-a" href="https://dogs-seminar.github.io/">
+                        <span class="navbar-item-text">dogs</span>
+                    </a>
+
+                    <a class="navbar-item reset-a" href="https://arxiv.org/search/?searchtype=author&query=Varshney%2C+Aporva">
+                        <span class="navbar-item-text">arXiv</span>
+                    </a>
+
                     <a class="navbar-item reset-a" href="https://github.com/avarsh">
                         <span class="navbar-item-text">github</span>
                     </a>
@@ -58,7 +99,7 @@
                             working at <strong>Bloomberg</strong> and <strong>Meta</strong> as a software engineering intern.
 
                             <br/><br/>
-                            E-mail: <code>varshney dot aporva at gmail dot com</code>
+                            E-mail: <code>aporva dot varshney dot 22 at ucl dot ac dot uk</code>
                         </p>
                     </div>
                 </div>
@@ -160,6 +201,22 @@
                 <span class="section-heading">Maths!</span>
                 
                 <div class="card-holder">
+                    <a class="card reset-a" href="https://arxiv.org/abs/2402.18513">
+                        <div class="card-head">
+                            <div class="card-title">
+                                Categorical absorption of a non-isolated singularity
+                            </div>
+                            <div class="card-subtitle">
+                                Preprint, 2024
+                            </div>
+                        </div>
+                        <div class="card-content text-block dynamic">
+                            This pre-print studies a non-isolated threefold singularity, representing it
+                            at the level of the derived category through an absorbing algebra.
+                            The behaviour under resolutions and smoothings is considered.
+                        </div>
+                    </a>
+                    
                     <a class="card reset-a" href="/assets/AporvaVarshneyMastersProject.pdf">
                         <div class="card-head">
                             <div class="card-title">
@@ -240,7 +297,7 @@
                         </div>
                         <div class="card-content text-block dynamic">
                             A website written without any frameworks, boilerplate code or
-                            static site generators, and < 20 lines of Javascript.
+                            static site generators.
                         </div>
                     </a>
                 </div>
@@ -265,6 +322,15 @@
                 for (var i = 0; i < dynamicElems.length; i++) {
                     dynamicElems[i].classList.add(greeting);
                 }
+
+                function openNav() {
+                  document.getElementById("mobile-nav").style.width = "100%";
+                }
+
+                /* Set the width of the side navigation to 0 */
+                function closeNav() {
+                    document.getElementById("mobile-nav").style.width = "0";
+                } 
             </script>
         </div>
 

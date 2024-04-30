@@ -93,6 +93,7 @@ body {
     }
 }
 
+
 .text-block {
     &.morning > strong {
         color: $morning-accent;
@@ -138,7 +139,6 @@ body {
 }
 
 #excerpt {
-    padding-left: 24px;
     max-width: 90%;
 }
 
@@ -157,6 +157,7 @@ body {
     #title-small {
         font-size: $size-medium;
         padding-left: 0;    
+        text-shadow: -2px 2px rgba(#000, 0.1);
     }
     
     :first-child {
@@ -299,7 +300,9 @@ h1 {
     display: none;
 }
 
+
 @media only screen and (max-width: 1200px) {
+
     .navbar {
         display: none;
     }
