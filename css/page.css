@@ -122,7 +122,7 @@ body {
 }
 
 #greeting {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 #greeting .col {
   font-size: 4em;
@@ -157,15 +157,15 @@ body {
 .vertical-align-helper {
   display: inline-block;
   height: 100%;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 #profile-image,
 #study-img {
   width: 95%;
-  border-radius: 100%;
+  border-radius: 0;
   vertical-align: middle;
-  box-shadow: -5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .section {
